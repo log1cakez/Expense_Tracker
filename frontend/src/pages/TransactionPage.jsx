@@ -36,7 +36,6 @@ const TransactionPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const amount = parseFloat(formData.amount); // convert amount to number bc by default it is string
-    // and the reason it's coming from an input field
     try {
       await updateTransaction({
         variables: {
